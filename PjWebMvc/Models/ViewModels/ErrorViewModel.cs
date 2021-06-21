@@ -1,6 +1,6 @@
 using System;
 
-namespace PjWebMvc.Models
+namespace PjWebMvc.Models.ViewModels
 {
     public class ErrorViewModel
     {

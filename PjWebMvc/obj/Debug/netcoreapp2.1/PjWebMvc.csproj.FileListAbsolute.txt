@@ -33,3 +33,4 @@ C:\Users\Chico\source\repos\PjWebMvc\PjWebMvc\obj\Debug\netcoreapp2.1\PjWebMvc.d
 C:\Users\Chico\source\repos\PjWebMvc\PjWebMvc\obj\Debug\netcoreapp2.1\PjWebMvc.pdb
 C:\Users\Chico\source\repos\PjWebMvc\PjWebMvc\obj\Debug\netcoreapp2.1\PjWebMvc.genruntimeconfig.cache
 C:\Users\Chico\source\repos\PjWebMvc\PjWebMvc\obj\Debug\netcoreapp2.1\PjWebMvc.csproj.CopyComplete
+C:\Users\Chico\source\repos\PjWebMvc\PjWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Index.cshtml.g.cs
