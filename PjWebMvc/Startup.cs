@@ -37,7 +37,9 @@ namespace PjWebMvc
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<PjWebMvcContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("PjWebMvcContext")));
+                    options.UseMySql(Configuration.GetConnectionString("PjWebMvcContext"), builder =>
+                    builder.MigrationsAssembly("PjWebMvc")));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
