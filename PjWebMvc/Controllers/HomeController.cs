@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PjWebMvc.Models.ViewModels;
+using PjWebMvc.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
