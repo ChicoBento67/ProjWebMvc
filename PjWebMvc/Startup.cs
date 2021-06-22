@@ -11,6 +11,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using PjWebMvc.Models;
+using PjWebMvc.Data;
+using PjWebMvc.Services;
 
 namespace PjWebMvc
 {
@@ -40,14 +42,18 @@ namespace PjWebMvc
                     options.UseMySql(Configuration.GetConnectionString("PjWebMvcContext"), builder =>
                     builder.MigrationsAssembly("PjWebMvc")));
 
+            services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, SeedingService seedingService)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                seedingService.Seed();
             }
             else
             {
